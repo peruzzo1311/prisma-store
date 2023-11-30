@@ -8,7 +8,7 @@ export default function HeaderSearch() {
     <div className="relative w-full">
       <Input
         placeholder="Pesquisar"
-        className="w-full focus-visible:bg-primary-50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:ring-offset-0"
+        className="w-full transition duration-300 focus-visible:bg-primary-50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:ring-offset-0"
       />
 
       <div className="absolute right-0 top-0 mr-3 flex h-full items-center">
