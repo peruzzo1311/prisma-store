@@ -6,20 +6,13 @@ import Link from "next/link";
 export default function HeaderLogo() {
   return (
     <Link href={"/"}>
-      <div className="flex items-center">
-        <div className="relative h-12 w-12">
-          <Image
-            src={icon}
-            alt="icon"
-            fill
-            className="aspect-square rounded-full bg-primary object-contain p-2"
-          />
-        </div>
-
-        <p className="ml-2 hidden font-semibold uppercase text-primary md:flex">
-          Prisma Store
-        </p>
-      </div>
+      <Image
+        src={icon}
+        alt="icon"
+        width={44}
+        height={44}
+        className="aspect-square h-12 w-auto rounded-full bg-primary object-contain p-2 hover:opacity-60"
+      />
     </Link>
   );
 }

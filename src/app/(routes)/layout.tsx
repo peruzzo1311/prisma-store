@@ -12,7 +12,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
       <main className="flex min-h-screen flex-col">
         <Header />
 
-        <section className="flex-1">
+        <section className="flex flex-1 flex-col bg-zinc-100 p-2 md:p-4">
           <Suspense>{children}</Suspense>
         </section>
 
