@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import banner from "@/assets/images/banner-app.png";
@@ -12,8 +14,10 @@ import {
 
 export default function ProductCard({
   isFeatured = false,
+  isPromotion = false,
 }: {
   isFeatured?: boolean;
+  isPromotion?: boolean;
 }) {
   return (
     <Card className="group cursor-pointer overflow-hidden shadow">
@@ -22,7 +26,7 @@ export default function ProductCard({
           <Image
             src={banner}
             alt="produto"
-            className="h-64 object-cover transition ease-in-out group-hover:scale-125"
+            className="h-64 object-cover transition ease-in-out md:group-hover:scale-125"
           />
         </div>
       </CardHeader>
@@ -41,9 +45,11 @@ export default function ProductCard({
       </CardContent>
 
       <CardFooter className="flex-col items-start">
-        <p className="text-sm font-semibold text-muted-foreground line-through">
-          R$2.000,00
-        </p>
+        {isPromotion && (
+          <p className="text-sm font-semibold text-muted-foreground line-through">
+            R$2.000,00
+          </p>
+        )}
 
         <p className="text-lg font-semibold text-primary">R$2.000,00</p>
       </CardFooter>

@@ -1,10 +1,11 @@
 "use client";
 
-import { Navigation, Scrollbar } from "swiper/modules";
+import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductCard from "./product-card";
 
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 
 export default function CarouselProducts() {
@@ -16,9 +17,10 @@ export default function CarouselProducts() {
         slidesPerView={1}
         scrollbar={{
           hide: false,
+          draggable: true,
+          enabled: true,
         }}
-        navigation
-        modules={[Scrollbar, Navigation]}
+        modules={[Scrollbar]}
         className="!pb-4"
         breakpoints={{
           768: {
@@ -32,11 +34,11 @@ export default function CarouselProducts() {
           },
         }}
       >
-        {Array.from({ length: 10 })
+        {Array.from({ length: 4 })
           .fill(0)
           .map((_, index) => (
             <SwiperSlide key={index}>
-              <ProductCard />
+              <ProductCard isPromotion isFeatured />
             </SwiperSlide>
           ))}
       </Swiper>
