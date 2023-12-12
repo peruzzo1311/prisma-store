@@ -4,20 +4,15 @@ import { Card } from "@/components/ui/card";
 
 import banner from "@/assets/images/banner-app.png";
 
-export default function ProductCard() {
+export default function ProductCardFeatured() {
   return (
     <Card className="group mx-auto max-w-xs cursor-pointer overflow-hidden rounded-lg drop-shadow ">
       <div className="overflow-hidden">
         <Image
           alt="Profile photo"
           className="h-56 w-full object-cover transition duration-200 ease-in-out group-hover:scale-110"
-          height="224"
           src={banner}
-          style={{
-            aspectRatio: "384/224",
-            objectFit: "cover",
-          }}
-          width="384"
+          priority
         />
       </div>
 

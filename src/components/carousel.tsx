@@ -2,11 +2,11 @@
 
 import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProductCard from "./products/card";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
+import ProductCardFeatured from "./products/featured-card";
 
 export default function CarouselProducts() {
   return (
@@ -38,7 +38,7 @@ export default function CarouselProducts() {
           .fill(0)
           .map((_, index) => (
             <SwiperSlide key={index}>
-              <ProductCard />
+              <ProductCardFeatured />
             </SwiperSlide>
           ))}
       </Swiper>

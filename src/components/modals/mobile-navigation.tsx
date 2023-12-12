@@ -37,61 +37,31 @@ export default function ModalMobileNavigation() {
   const routes = [
     {
       name: "Início",
-      icon: (
-        <Home
-          className={cn("h-6 w-6", {
-            "text-primary": pathname === "/",
-          })}
-        />
-      ),
+      icon: Home,
       path: "/",
       active: pathname === "/",
     },
     {
       name: "Buscar",
-      icon: (
-        <Search
-          className={cn("h-6 w-6", {
-            "text-primary": pathname === "/search",
-          })}
-        />
-      ),
+      icon: Search,
       path: "/search",
       active: pathname === "/search",
     },
     {
       name: "Produtos",
-      icon: (
-        <ShoppingBasket
-          className={cn("h-6 w-6", {
-            "text-primary": pathname === "/products",
-          })}
-        />
-      ),
+      icon: ShoppingBasket,
       path: "/products",
       active: pathname === "/products",
     },
     {
       name: "Sobre",
-      icon: (
-        <Info
-          className={cn("h-6 w-6", {
-            "text-primary": pathname === "/about",
-          })}
-        />
-      ),
+      icon: Info,
       path: "/about",
       active: pathname === "/about",
     },
     {
       name: "Contato",
-      icon: (
-        <Contact
-          className={cn("h-6 w-6", {
-            "text-primary": pathname === "/contact",
-          })}
-        />
-      ),
+      icon: Contact,
       path: "/contact",
       active: pathname === "/contact",
     },
@@ -114,7 +84,11 @@ export default function ModalMobileNavigation() {
           {routes.map((route) => (
             <Link href={route.path} key={route.name}>
               <li className="flex items-center space-x-4 p-2">
-                {route.icon}
+                <route.icon
+                  className={cn("h-6 w-6", {
+                    "text-primary": pathname === route.path,
+                  })}
+                />
 
                 <p className={route.active ? "font-semibold text-primary" : ""}>
                   {route.name}
@@ -143,13 +117,13 @@ export default function ModalMobileNavigation() {
 
             <DropdownMenuContent className="w-60">
               <DropdownMenuItem>
-                <UserCircle className="mr-4 h-6 w-6" />
-                <p className="text-lg">Minha conta</p>
+                <UserCircle className="mr-2 h-5 w-5" />
+                <p>Minha conta</p>
               </DropdownMenuItem>
 
               <DropdownMenuItem>
-                <LogOut className="mr-4 h-6 w-6" />
-                <p className="text-lg">Sair</p>
+                <LogOut className="mr-2 h-5 w-5" />
+                <p>Sair</p>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

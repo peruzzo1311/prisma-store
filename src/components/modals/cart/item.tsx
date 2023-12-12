@@ -8,7 +8,7 @@ export default function CartItem() {
   return (
     <div className="flex w-full justify-between space-x-4 py-2">
       <div className="relative">
-        <div className="relative h-16 w-16 cursor-pointer overflow-hidden rounded ring-1 ring-primary">
+        <div className="relative h-16 w-16 cursor-pointer overflow-hidden rounded">
           <Image
             src={banner}
             alt="Banner"

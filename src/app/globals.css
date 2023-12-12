@@ -71,7 +71,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-zinc-900;
+    @apply bg-gray-100 text-zinc-900;
   }
 }
 
@@ -79,4 +79,10 @@
   display: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+  img[loading="lazy"] {
+    clip-path: inset(0.6px);
+  }
 }

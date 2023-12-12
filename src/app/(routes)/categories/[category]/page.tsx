@@ -41,9 +41,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
               <div className="flex flex-shrink-0 items-center">
                 <Image
                   alt="Produto"
-                  className="aspect-[128/128] h-36 w-32 rounded object-cover md:mx-auto md:aspect-video md:h-48 md:w-[90%]"
-                  height="128"
-                  width="128"
+                  className="h-36 w-32 rounded object-cover md:mx-auto md:aspect-video md:h-48 md:w-full"
                   src={banner}
                 />
               </div>
