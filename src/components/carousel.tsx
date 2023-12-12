@@ -2,7 +2,7 @@
 
 import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProductCard from "./product-card";
+import ProductCard from "./products/card";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,7 +23,7 @@ export default function CarouselProducts() {
         modules={[Scrollbar]}
         className="!pb-4"
         breakpoints={{
-          768: {
+          640: {
             slidesPerView: 2,
           },
           1024: {
@@ -38,7 +38,7 @@ export default function CarouselProducts() {
           .fill(0)
           .map((_, index) => (
             <SwiperSlide key={index}>
-              <ProductCard isPromotion isFeatured />
+              <ProductCard />
             </SwiperSlide>
           ))}
       </Swiper>

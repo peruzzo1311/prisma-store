@@ -31,36 +31,38 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <p className="text-sm text-muted-foreground">100 resultados</p>
       </div>
 
-      <div className="space-y-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {Array.from({ length: 10 }).map((_, index) => (
           <Card
-            className="select-none p-2 transition duration-75 active:opacity-10"
             key={index}
+            className="mx-auto max-w-xl overflow-hidden rounded-xl bg-white p-2 shadow-md"
           >
-            <div className="flex gap-2">
-              <div className="w-2/4">
+            <div className="flex flex-row md:flex-col">
+              <div className="flex flex-shrink-0 items-center">
                 <Image
+                  alt="Produto"
+                  className="aspect-[128/128] h-36 w-32 rounded object-cover md:mx-auto md:aspect-video md:h-48 md:w-[90%]"
+                  height="128"
+                  width="128"
                   src={banner}
-                  alt="banner"
-                  width={400}
-                  height={400}
-                  className="aspect-square w-full rounded-lg object-cover"
                 />
               </div>
 
-              <div className="w-full">
-                <p className="mb-2 line-clamp-2 text-lg font-semibold">
-                  Nome do produto
-                </p>
+              <div className="flex flex-col justify-between px-4">
+                <div className="space-y-2">
+                  <div className="font-semibold uppercase md:mt-4">
+                    Prisma gestão de software
+                  </div>
 
-                <p className="line-clamp-3 text-sm text-muted-foreground">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit quis non enim obcaecati aspernatur qui quidem quae
-                  eum ipsam in maxime culpa unde quia, natus quas voluptate
-                  explicabo ea sit.
-                </p>
+                  <p className="line-clamp-2 text-sm text-muted-foreground md:line-clamp-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veniam nostrum eos numquam sed quasi provident vitae ullam
+                    odit, voluptates quod deleniti fugiat explicabo repellat ex
+                    blanditiis soluta, quis itaque debitis.
+                  </p>
+                </div>
 
-                <p className="mt-4 text-end text-xl font-bold text-muted-foreground text-primary">
+                <p className="text-end text-xl font-bold text-primary md:mt-4">
                   R$ 100,00
                 </p>
               </div>
