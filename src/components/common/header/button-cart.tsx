@@ -9,14 +9,12 @@ export default function ButtonCart() {
 
   return (
     <Button
-      className="ml-2 w-auto rounded-full border-transparent bg-primary px-4 py-3 font-semibold text-white transition hover:opacity-75 disabled:cursor-not-allowed disabled:opacity-50 md:ml-4"
+      className="gap-2 rounded-full bg-white px-4 py-3 font-semibold text-primary hover:bg-white hover:bg-opacity-80"
       onClick={() => openChange()}
     >
       <ShoppingBag size={20} />
 
-      <span className="ml-2 text-sm font-medium text-white">
-        {items.length}
-      </span>
+      <span>{items.length}</span>
     </Button>
   );
 }

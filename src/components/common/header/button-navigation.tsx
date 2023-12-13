@@ -11,10 +11,10 @@ export default function ButtonNavigationMobile() {
     <Button
       size={"icon"}
       variant={"ghost"}
-      className="md:hidden"
+      className="mr-2 h-10 w-10 hover:bg-primary-700 md:hidden"
       onClick={openChange}
     >
-      <Menu />
+      <Menu className="h-6 w-6 text-white" />
     </Button>
   );
 }

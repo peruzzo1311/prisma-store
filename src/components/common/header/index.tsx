@@ -1,30 +1,31 @@
-import ButtonCart from "@/components/common/header/button-cart";
 import HeaderLogo from "@/components/common/header/logo";
-import Navbar from "@/components/common/header/navbar";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
+import ButtonCart from "./button-cart";
 import ButtonNavigationMobile from "./button-navigation";
+import Navbar from "./navbar";
 
 export default function Header() {
   return (
-    <header className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-2 md:px-8">
-      <ButtonNavigationMobile />
+    <header className="container w-full bg-primary">
+      <div className="flex w-full items-center py-2">
+        <HeaderLogo />
 
-      <HeaderLogo />
+        <Navbar />
 
-      <Navbar />
+        <div className="ml-auto flex items-center justify-center gap-2">
+          <ButtonNavigationMobile />
 
-      <div className="flex md:space-x-4">
-        <Button size={"icon"} variant={"ghost"} className="hidden md:flex">
-          <Search />
-        </Button>
+          <Button
+            size={"icon"}
+            variant={"ghost"}
+            className="mr-2 hidden h-10 w-10 hover:bg-primary-700 md:flex"
+          >
+            <Search className="h-6 w-6 text-white" />
+          </Button>
 
-        <Avatar className="hidden md:flex">
-          <AvatarFallback>G</AvatarFallback>
-        </Avatar>
-
-        <ButtonCart />
+          <ButtonCart />
+        </div>
       </div>
     </header>
   );

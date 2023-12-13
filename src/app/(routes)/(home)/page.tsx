@@ -12,7 +12,7 @@ export default function Home() {
     <Container>
       <div className="space-y-16">
         <div>
-          <Link href={"/categories/featured"}>
+          <Link href={"/categories/featured"} className="block w-fit">
             <h1 className="mb-4 text-xl font-bold hover:underline">
               Soluções em destaque
             </h1>
@@ -38,12 +38,12 @@ export default function Home() {
             {Array.from({ length: 6 }).map((_, i) => (
               <Card
                 key={i}
-                className="group cursor-pointer overflow-hidden rounded-lg drop-shadow"
+                className="cursor-pointer overflow-hidden rounded-lg transition hover:shadow-lg"
               >
                 <div className="overflow-hidden">
                   <Image
                     alt="Profile photo"
-                    className="h-56 w-full object-cover transition duration-200 ease-in-out group-hover:scale-110"
+                    className="h-56 w-full object-cover"
                     src={banner}
                     priority
                   />
