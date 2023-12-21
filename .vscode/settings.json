@@ -1,0 +1,147 @@
+{
+    // Emmet
+    "emmet.syntaxProfiles": {
+      "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    // Security
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    // Javascript
+    "javascript.suggest.autoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "extensions.ignoreRecommendations": true,
+    // Files
+    "files.associations": {
+      ".sequelizerc": "javascript",
+      ".stylelintrc": "json",
+      "*.tsx": "typescriptreact",
+      ".env.*": "dotenv",
+      ".prettierrc": "json"
+    },
+    "files.exclude": {
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/.hg": true,
+      "**/.svn": true,
+      "**/.git": true
+    },
+    // Explorer
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    // Typescript
+    "typescript.suggest.autoImports": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsserver.log": "off",
+    // Workbench
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.labelFormat": "short",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Aura Soft Dark",
+    // Extensions
+    "extensions.autoCheckUpdates": true,
+    // Eslint
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "typescriptreact",
+      "javascriptreact"
+    ],
+    // Editor
+    "editor.semanticHighlighting.enabled": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.smoothScrolling": true,
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": true,
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "same",
+    "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
+    "editor.parameterHints.enabled": true,
+    "editor.renderLineHighlight": "gutter",
+    "editor.lineHeight": 26,
+    "editor.inlineSuggest.enabled": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.addMissingImports": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 14,
+    "liveServer.settings.donotShowInfoMsg": true,
+    // Languages
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": true,
+      "editor.autoClosingBrackets": "always",
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.formatOnSave": true,
+      "editor.autoClosingBrackets": "always",
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[prisma]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "Prisma.prisma"
+    },
+    // Prettier
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    // Git & GitHub
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": true,
+      "markdown": false,
+      "scminput": false,
+      "yaml": false,
+      "javascript": true,
+      "python": true,
+      "javascriptreact": true
+    },
+    "breadcrumbs.enabled": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "symbols.hidesExplorerArrows": false,
+    "git.confirmSync": false,
+    "workbench.sideBar.location": "right",
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.defaultFormatter": "GitHub.copilot",
+    "codesnap.backgroundColor": "",
+    "codesnap.showLineNumbers": false,
+    "codesnap.transparentBackground": true,
+    "codesnap.containerPadding": "",
+    "codesnap.boxShadow": "",
+    "editor.fontSize": 13,
+    "color-highlight.markRuler": false,
+    "editor.cursorBlinking": "smooth"
+  }

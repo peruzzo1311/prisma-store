@@ -75,11 +75,11 @@
   }
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
-}
+} */
 
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   img[loading="lazy"] {

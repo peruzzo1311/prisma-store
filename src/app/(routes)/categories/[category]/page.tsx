@@ -53,7 +53,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                   </div>
 
                   <p className="line-clamp-2 text-sm text-muted-foreground md:line-clamp-3">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Loem ipsum dolor sit, amet consectetur adipisicing elit.
                     Veniam nostrum eos numquam sed quasi provident vitae ullam
                     odit, voluptates quod deleniti fugiat explicabo repellat ex
                     blanditiis soluta, quis itaque debitis.
